@@ -1,0 +1,5 @@
+::1 - - [22/Mar/2017:10:07:34 +0000] "GET /vueNightSwitch HTTP/1.1" 200 6358 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+::1 - - [22/Mar/2017:10:07:34 +0000] "GET /javascripts/vue.min.js HTTP/1.1" 304 - "http://localhost:3000/vueNightSwitch" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+::1 - - [22/Mar/2017:10:07:34 +0000] "GET /javascripts/vue-night-switch.js HTTP/1.1" 304 - "http://localhost:3000/vueNightSwitch" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+::1 - - [22/Mar/2017:10:07:34 +0000] "GET /images/adoug.jpg HTTP/1.1" 200 69261 "http://localhost:3000/vueNightSwitch" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+::1 - - [22/Mar/2017:10:07:38 +0000] "GET /javascripts/vue-night-switch.js.map HTTP/1.1" 404 1030 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1"
