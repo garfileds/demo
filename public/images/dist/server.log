@@ -1,0 +1,24 @@
+ Listening on http://127.0.0.1:8081
+127.0.0.1 - GET /service-worker.js HTTP/1.1 200 3912 - 16.298 ms
+127.0.0.1 - GET /index.html?_sw-precache=098d2530391237fd4496348f0369a150 HTTP/1.1 200 6162 - 9.143 ms
+127.0.0.1 - GET /js/app.f8b7147.js?_sw-precache=1bb95082989f3fbcf287c61fcf6bc7c6 HTTP/1.1 200 14531 - 8.867 ms
+127.0.0.1 - GET /css/app.c875749.css?_sw-precache=48aab4c1c67137889e308f144afee6c5 HTTP/1.1 200 143494 - 8.872 ms
+127.0.0.1 - GET /js/components/base-async.267a9be.js?_sw-precache=c25d7377765c38804e493f7f5d2cbcd3 HTTP/1.1 200 16268 - 11.594 ms
+127.0.0.1 - GET /js/base.b79edb2.js?_sw-precache=f74e0fd5aa1e18cc5eb1929560f19ced HTTP/1.1 200 165377 - 10.020 ms
+127.0.0.1 - GET /js/components/home.0c756ee.js?_sw-precache=caae7a9923e33a714f3d928290535b7d HTTP/1.1 200 40791 - 7.372 ms
+127.0.0.1 - GET /js/components/login.6ca7771.js?_sw-precache=ba506a1cfbd36444b55ade99f4fa0546 HTTP/1.1 200 3533 - 30.123 ms
+127.0.0.1 - GET /js/asyncAssets.a42efa7.js?_sw-precache=76f215d736899dabbb884e400d4251b9 HTTP/1.1 200 285 - 45.118 ms
+127.0.0.1 - GET /js/components/planAdd.812064e.js?_sw-precache=61b3143c66f773328df6bb3042737b86 HTTP/1.1 200 473988 - 2.054 ms
+127.0.0.1 - GET /js/components/planDetail.bb8353f.js?_sw-precache=41545e63efbef53000a48dd1cb984b0f HTTP/1.1 200 41175 - 6.385 ms
+127.0.0.1 - GET /js/components/pokemen.41de6fa.js?_sw-precache=c24b41249ee21432c86b3d618db012ff HTTP/1.1 200 5563 - 3.687 ms
+127.0.0.1 - GET /js/components/register.b02f685.js?_sw-precache=62bfe94a82035886c9332f025774a316 HTTP/1.1 200 4341 - 3.356 ms
+127.0.0.1 - GET /js/components/planEdit.7734259.js?_sw-precache=5b397862f0fa2d1e0479434f98e67b46 HTTP/1.1 200 2129 - 6.381 ms
+127.0.0.1 - GET /js/components/setting.157e90a.js?_sw-precache=3160803802055b0a61255bd9eb8eb53c HTTP/1.1 200 6321 - 6.739 ms
+127.0.0.1 - GET /js/criticalCss.9de3554.js?_sw-precache=8280b9c62110bb103f5b3696c4790a27 HTTP/1.1 200 47 - 6.878 ms
+127.0.0.1 - GET /js/manifest.487ff81.js?_sw-precache=0c90ef307a42e7a3079dda8cd7d93e69 HTTP/1.1 200 1712 - 2.811 ms
+127.0.0.1 - GET /images/all-devices_medium@2x.png HTTP/1.1 200 601240 - 6.752 ms
+127.0.0.1 - GET /images/bg_medium@1x.jpg HTTP/1.1 200 196712 - 7.665 ms
+127.0.0.1 - GET /images/all-devices_medium@1x.png HTTP/1.1 200 165120 - 1.932 ms
+127.0.0.1 - GET /js/components/base-async.267a9be.js HTTP/1.1 200 16268 - 1.030 ms
+127.0.0.1 - GET /js/components/login.6ca7771.js HTTP/1.1 200 3533 - 0.996 ms
+127.0.0.1 - GET /images/bg_medium@1x.jpg HTTP/1.1 200 196712 - 1.164 ms
