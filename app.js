@@ -1,17 +1,14 @@
-var express = require('express');
-var path = require('path');
-var fs = require('fs');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+const express = require('express')
+const path = require('path');
+const fs = require('fs');
+const logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+const AutoRouter = require('auto-routes-express');
 
-var index = require('./routes/index');
-var demo = require('./routes/demo');
+const app = express();
 
-var app = express();
-
-var accessLogStream = fs.createWriteStream(path.join(__dirname, './log/access.log'), {flags: 'a'});
-
+const accessLogStream = fs.createWriteStream(path.join(__dirname, './log/access.log'), {flags: 'a'});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -23,14 +20,16 @@ app.use(logger('combined', {stream: accessLogStream}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use('/demo', express.static('public'));
 
-app.use('/', index);
-app.use('/demo', demo);
+// 静态文件前缀要带demo
+// e.g., /demo/javascripts/vue.min.js
+app.use(express.static('public'));
+
+AutoRouter.init(app, path.join(__dirname, './routes'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
+  let err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
