@@ -73,6 +73,7 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chimee/0.10.5/index.browser.js"></script>
+<script src="/demo/javascripts/video/chimee-kernel-mp4.js"></script>
 <script>
   const video = new Chimee({
     wrapper: '#video',
@@ -86,7 +87,10 @@
     xWebkitAirplay: true,
     x5VideoPlayerType: 'h5',
     muted: true,
-    defaultMuted: true
+    defaultMuted: true,
+    kernels: {
+      mp4: chimeeKernelMp4
+    }
   })
   // canplay 事件存在兼容性问题
   video.on('canplaythrough', function () {
@@ -95,6 +99,12 @@
 
   video.on('ended', function () {
     document.querySelector('.inner_content').className = 'inner_content'
+  })
+
+  video.on('error', function (err) {
+    console.log('err: ', err)
+    document.querySelector('.inner_content').className = 'inner_content'
+    document.querySelector('.inner').className = 'inner bg';
   })
 </script>
 </body>
