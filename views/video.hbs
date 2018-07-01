@@ -16,14 +16,6 @@
       height: 100vh;
     }
 
-    /*.videoBox {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-    }*/
-
     .video {
       position: absolute;
       top: 0;
@@ -51,33 +43,44 @@
       line-height: 30px;
       padding: 200px 0 0 30px;
     }
+
+    .invisible {
+      opacity: 0;
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="inner">
-      <p class="inner_content">去做最幸福的人</p>
+      <p class="inner_content invisible">去做最幸福的人</p>
     </div>
 
     <video class="video" id="video"
-           preload="auto"
-           autoplay x5-video-player-type="h5" x5-video-player-fullscreen
+           preload="auto" muted autoplay
+           x5-video-player-type="h5" x5-video-player-fullscreen
            playsinline webkit-playsinline
            style="object-fit: fill">
       <source src="/demo/video/opening.mov" type="video/mov">
       <source src="/demo/video/opening.mp4" type="video/mp4">
     </video>
-
-    <!--<div class="videoBox">
-    </div>-->
   </div>
 
   <script>
-    const sources = document.querySelectorAll('#video source')
+    const video = document.querySelector('#video')
+    const sources = video.querySelectorAll('source')
     const lastSource = sources[sources.length - 1]
 
     lastSource.addEventListener('error', function (err) {
       document.querySelector('.inner').className = 'inner bg';
+    })
+
+    // canplay 事件存在兼容性问题
+    video.addEventListener('canplaythrough', function () {
+      video.play()
+    })
+
+    video.addEventListener('ended', function () {
+      document.querySelector('.inner_content').className = 'inner_content'
     })
   </script>
 </body>
