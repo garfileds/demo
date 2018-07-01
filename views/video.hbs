@@ -71,6 +71,7 @@
     const lastSource = sources[sources.length - 1]
 
     lastSource.addEventListener('error', function (err) {
+      document.querySelector('.inner_content').className = 'inner_content'
       document.querySelector('.inner').className = 'inner bg';
     })
 
