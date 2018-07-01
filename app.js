@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use(MiddlewareVideo);
+// app.use(MiddlewareVideo);
 
 // 静态文件前缀要带demo
 // e.g., /demo/javascripts/vue.min.js

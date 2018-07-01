@@ -47,6 +47,16 @@
     .invisible {
       opacity: 0;
     }
+
+    *::-webkit-media-controls-play-button {
+      display: none!important;
+      -webkit-appearance: none;
+    }
+
+    *::-webkit-media-controls-start-playback-button {
+      display: none!important;
+      -webkit-appearance: none;
+    }
   </style>
 </head>
 <body>
@@ -57,10 +67,10 @@
 
     <video class="video" id="video"
            preload="auto" muted autoplay
-           x5-video-player-type="h5" x5-video-player-fullscreen
+           x5-video-player-type="h5" x5-video-player-fullscreen x5-playsinline
            playsinline webkit-playsinline
            style="object-fit: fill">
-      <source src="/demo/video/opening.mov" type="video/mov">
+      <source src="/demo/video/bech.mp4" type="video/mp4">
       <source src="/demo/video/opening.mp4" type="video/mp4">
     </video>
   </div>
@@ -71,6 +81,7 @@
     const lastSource = sources[sources.length - 1]
 
     lastSource.addEventListener('error', function (err) {
+      console.log('err: ', err)
       document.querySelector('.inner_content').className = 'inner_content'
       document.querySelector('.inner').className = 'inner bg';
     })
